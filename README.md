@@ -53,7 +53,7 @@ kubectl apply -f pod-service.yml
 ### Option 1 (Recommended for KIND)
 
 ```
-kubectl port-forward svc/nginx-service 8080:80
+kubectl port-forward --address 0.0.0.0 svc/nginx-service 8080:80
 ```
 
 Then open:
